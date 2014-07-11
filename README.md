@@ -28,7 +28,7 @@ SECRET_KEY_BASE: 4fba605ff1f4c8d35d49feb5ebe0cea28dd27f40e104e46e85c1c408a28c730
 Be sure that you don't commit this file into your repository. It should only be used for setting configuration for development use.
 
 ```bash
-echo 'config/environment.rb' >> .gitignore
+echo 'config/environment.yml' >> .gitignore
 ```
 
 ## That's it!
