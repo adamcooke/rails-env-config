@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "rails_env_config"
-  s.version     = '1.0.0'
+  s.version     = '1.0.2'
   s.authors     = ["Adam Cooke"]
   s.email       = ["adam@atechmedia.com"]
   s.homepage    = "http://adamcooke.io"
