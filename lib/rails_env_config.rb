@@ -11,9 +11,22 @@ module RailsEnvConfig
       YAML.load(File.open(path)).each do |key, value|
         ENV[key.to_s] = value
       end
-      true
+      callbacks.each(&:call)
+      @loaded = true
     else
       false
+    end
+  end
+
+  def self.callbacks
+    @callbacks ||= []
+  end
+
+  def self.callback(&block)
+    if @loaded
+      block.call
+    else
+      self.callbacks << block
     end
   end
 
