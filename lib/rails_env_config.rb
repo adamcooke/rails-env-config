@@ -2,7 +2,7 @@ require 'yaml'
 require 'rails_env_config/railtie'
 
 module RailsEnvConfig
-  
+
   #
   # Load some environment variables from a given path
   #
@@ -11,11 +11,10 @@ module RailsEnvConfig
       YAML.load(File.open(path)).each do |key, value|
         ENV[key.to_s] = value
       end
-      $stderr.puts "=> Loaded local environment variables from #{path}"
       true
     else
       false
     end
   end
-  
+
 end
