@@ -9,7 +9,7 @@ module RailsEnvConfig
   def self.load(path)
     if File.exist?(path)
       YAML.load(File.open(path)).each do |key, value|
-        ENV[key.to_s] = value
+        ENV[key.to_s] ||= value
       end
       callbacks.each(&:call)
       @loaded = true
