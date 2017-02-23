@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = "rails_env_config"
-  s.version     = '1.0.4'
+  s.version     = '1.1.0'
   s.authors     = ["Adam Cooke"]
-  s.email       = ["adam@atechmedia.com"]
+  s.email       = ["me@adamcooke.io"]
   s.homepage    = "http://adamcooke.io"
   s.licenses    = ['MIT']
   s.summary     = "A library to allow custom local environment variables to be loaded into a Rails application."
